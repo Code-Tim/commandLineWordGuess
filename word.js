@@ -26,7 +26,7 @@ var Word = function () {
         var found = false;
 
         for (i = 0; i < this.letters.length; i++) {
-            var letterFound = this.letters[i].guessedLetter(character);
+            var letterFound = this.letters[i].guessLetter(character);
             if (letterFound) { found = true; };
         }
         return found;

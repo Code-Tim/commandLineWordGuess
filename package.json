@@ -1,0 +1,28 @@
+{
+  "name": "wordguesscommandline",
+  "version": "1.0.0",
+  "description": "Homework week 12",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Code-Tim/commandLineWordGuess.git"
+  },
+  "keywords": [
+    "word",
+    "guess",
+    "command",
+    "line"
+  ],
+  "author": "Tim Fisher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Code-Tim/commandLineWordGuess/issues"
+  },
+  "homepage": "https://github.com/Code-Tim/commandLineWordGuess#readme",
+  "dependencies": {
+    "inquirer": "^7.2.0"
+  }
+}
