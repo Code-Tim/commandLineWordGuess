@@ -4,8 +4,8 @@ var Blank = "_";
 // Displays word/phrase to guess
 var Letter = function (letter) {
     this.character = letter;
-    this.placeholder = (this.character === ' ' || (/[.']/.test(this.character))) ? this.character : Blank;
-    this.guessed = (this.character === ' ' || (/[.']/.test(this.character))) ? true : false;
+    this.placeholder = (this.character === ' ' || (/[.\-\']/.test(this.character))) ? this.character : Blank;
+    this.guessed = (this.character === ' ' || (/[.\-\']/.test(this.character))) ? true : false;
 }; Letter.prototype.toString = function () {
     return (this.guessed) ? this.character : this.placeholder;
 };

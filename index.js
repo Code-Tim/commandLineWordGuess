@@ -44,11 +44,15 @@ var newGame = function () {
 
                             if (MAX_TRIES - wrong != 0) { displayWord(gameWord); };
 
-                            if (gameWord.wordSolved()) {
-                                askForLetter();
-                            } else {
+                            console.log(gameWord.wordGuessed)
+                            console.log(gameWord.wordGuessed())
+                            if (gameWord.wordGuessed()) {
                                 console.log("OMG! You are BRILIANT, try the next word.");
                                 newGame();
+                            } else {
+                                console.log(gameWord.yourGuess)
+                                askForLetter();
+
                             }
                         } else {
                             console.log("\nHey fool you guessed this letter previously.  Try again.\n");
@@ -63,7 +67,7 @@ var newGame = function () {
                 });
         } else {
             console.log("GAME OVER.\n");
-            console.log("The toy was: " + gameWord.guessWord + ".  Come on try again.\n");
+            console.log("The toy was: " + gameWord.wordToGuess + ".  Come on try again.\n");
             newGame();
         }
 
