@@ -14,7 +14,7 @@ var newGame = function () {
     }
 
     gameWord.selectRandomWord();
-    console.log("\n********** NEW GAME **********");
+    console.log("\nTry To Guess My Word, I Will Give You 7 Tries And A Hint, It's Toy");
     displayWord(gameWord);
 
     var askForLetter = function () {
@@ -35,22 +35,22 @@ var newGame = function () {
                             var found = gameWord.yourGuess(answers.letter);
 
                             if (found) {
-                                console.log("\nEureka!\n");
+                                console.log("\nEureka! No Try wasted, Please Guess Another Letter\n");
                             } else {
                                 wrong++;
-                                console.log("\nErroneous!\n");
+                                console.log("\nErroneous! Please Guess Another Letter\n");
                                 console.log(MAX_TRIES - wrong + " attempts remaining\n");
                             };
 
                             if (MAX_TRIES - wrong != 0) { displayWord(gameWord); };
 
-                            console.log(gameWord.wordGuessed)
-                            console.log(gameWord.wordGuessed())
+                            //console.log(gameWord.wordGuessed)
+                            //console.log(gameWord.wordGuessed())
                             if (gameWord.wordGuessed()) {
                                 console.log("OMG! You are BRILIANT, try the next word.");
                                 newGame();
                             } else {
-                                console.log(gameWord.yourGuess)
+                                // console.log(gameWord.yourGuess)
                                 askForLetter();
 
                             }

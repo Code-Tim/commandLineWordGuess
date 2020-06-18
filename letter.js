@@ -24,3 +24,5 @@ Letter.prototype.guessLetter = function (guess) {
 };
 
 module.exports = Letter;
+
+// used https://stackoverflow.com/questions/9862761/how-to-check-if-character-is-a-letter-in-javascript to help with this.
